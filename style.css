@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+body {
+  height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 10%,
+    rgba(173, 199, 230, 1) 88%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 400px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(70px);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  text-align: center;
+  padding: 40px 35px;
+}
+.searchBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchBox input {
+  flex: 1;
+  padding: 10px 20px;
+  height: 45px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  color: #555;
+  font-size: 18px;
+  margin-right: 16px;
+}
+.searchBox button {
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchBox button img {
+  width: 30px;
+  height: 30px;
+}
+.weather-icon {
+  width: 200px;
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+.weather h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.weather h2 {
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: -20px;
+}
+.humidityWindDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 10px;
+}
+.infoBox {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+.infoBox img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.humidity,
+.wind {
+  font-size: 18px;
+  margin-top: -6px;
+}
+.error {
+  height: 200px;
+  font-size: 30px;
+  display: none;
+}
+.error img {
+  width: 100px;
+  margin-top: 30px;
+}
